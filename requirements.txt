@@ -1,4 +1,7 @@
+# Python 3.10
 diffusers==0.20.2
 transformers==4.28.0
 gradio==3.43.2
-accelerate
+accelerate==0.25.0
+black
+huggingface-hub==0.14.0
