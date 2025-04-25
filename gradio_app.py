@@ -1,19 +1,11 @@
 import gradio as gr
 import numpy as np
 import torch
-import requests
-import random
-import os
 import sys
 import pickle
-from PIL import Image
-
-from tqdm.auto import tqdm
-from datetime import datetime
 
 import diffusers
 from diffusers import DDIMScheduler
-from transformers import CLIPTextModel, CLIPTokenizer
 import torch.nn.functional as F
 
 from utils import preprocess_mask, process_sketch, process_prompts, process_example

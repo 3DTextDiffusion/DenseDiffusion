@@ -8,7 +8,7 @@ from diffusers import DDIMScheduler
 
 import torch.nn.functional as F
 
-device = "cuda:0"
+device = "cpu"
 pipe = diffusers.StableDiffusionPipeline.from_pretrained(
     "stable-diffusion-v1-5/stable-diffusion-v1-5",
     safety_checker=None,
