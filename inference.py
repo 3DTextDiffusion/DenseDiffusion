@@ -1,19 +1,12 @@
 import torch
-import os
 import numpy as np
 import diffusers
-import random
 import pickle
 
 from PIL import Image
-from tqdm.auto import tqdm
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipeline
 from diffusers import DDIMScheduler
 
-import transformers
-from transformers import CLIPTextModel, CLIPTokenizer
 import torch.nn.functional as F
-from torchvision import transforms
 
 device = "cuda:0"
 pipe = diffusers.StableDiffusionPipeline.from_pretrained(
